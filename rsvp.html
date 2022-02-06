@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Boda Nuria & Lucía</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <a href="index.html" id="nulu">Lucia <span class="y">y</span> Nuria</a>
+            <div class="toggle"></div>
+        </header>
+        
+        <div class="flores1">
+            <img src="assets/flores1.png" alt="">
+        </div>
+      
+        <div class="flores2">
+            <img src="assets/flores2.png" alt="">
+        </div>
+
+
+        <div class="contact-wrapper">
+            <div class="contact-block">
+                <form action="https://formspree.io/f/mlezjgya" method="POST">
+                    <label for="asistencia">¿Podremos asistir?</label>   <br>
+                    <input type="checkbox">¡Sí! Allí estaremos 😊    <br>
+                    <input type="checkbox">Lo siento, no podremos asistir ☹️
+                    
+                    <label for="nombre" class="form__label">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre" class="form__input" required>
+                    <label for="numeroadultos" class="form__label">Nº adultos: </label>
+                    <input type="number" name="numeroadultos" id="numeroadultos" class="form__input" required>
+                    <label for="numeroninos" class="form__label">Nº niños: </label>
+                    <input type="number" name="numeroninos" id="numeroninos" class="form__input" required>
+                    <label for="alergias">Alergias o comidas especiales: </label>
+                    <input class="form__input" name="alergias" type="text">
+                    <label for="bus">Reservar plaza en el bus: </label>
+                    <input type="checkbox">Sí
+                    <label for="mensaje">Escribe un mensaje (opcional):</label>
+                    <input type="text" id="mensaje" class="form__input" name="mensaje">
+                    <br><br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/rsvp.html">S.R.C.</a></li>
+            <li><a href="/pazo.html">Pazo de Cela</a></li>
+        </ul>
+    </div>
+
+
+</body>
+<script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () =>{
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+    })
+
+ 
+</script>
+</html>
